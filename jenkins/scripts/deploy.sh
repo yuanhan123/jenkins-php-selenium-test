@@ -2,6 +2,7 @@
 
 set -x
 #docker run -d -p 80:80 --name my-apache-php-app -v C:/Users/yuanhan/Desktop/jenkins-php-selenium-test/jenkins-php-selenium-test/src:/var/www/html php:7.2-apache
+                                                      #take this directory from console output
 docker run -d -p 80:80 --name my-apache-php-app -v /var/jenkins_home/workspace/jenkins-php-selenium-test/src:/var/www/html php:7.2-apache
 
 sleep 1
